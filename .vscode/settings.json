@@ -1,0 +1,254 @@
+{
+    "workbench.colorTheme": "KastorCode Dark Orange Theme",
+    // "workbench.colorTheme": "Violet Midnight",
+    "workbench.statusBar.visible": true,
+    "explorer.confirmDelete": false,
+    "terminal.integrated.sendKeybindingsToShell": true,
+    "editor.fontSize": 18,
+    "files.autoSave": "afterDelay",
+    "workbench.editorAssociations": {
+        "*.docx": "default"
+    },
+    "editor.tabSize": 2,
+    "C_Cpp.errorSquiggles": "disabled",
+    "editor.detectIndentation": false,
+    "C_Cpp.default.cppStandard": "c++17",
+    "C_Cpp.default.cStandard": "c11",
+    // should add it
+    //"terminal.integrated.enableMultiLinePasteWarning": false,
+    //"code-runner.ignoreSelection": true,
+    "code-runner.defaultLanguage": "cpp",
+    //"code-runner.customCommand": "rm -f *.o *.exe lib/*.a",
+    //"code-runner.customCommand": "chcp 65001",
+    
+    "code-runner.executorMap": {
+        // "cpp": "cd $dir & g++ -Wall -Wextra -O2 -std=c++17 \"$fileName\" -o \"$fileNameWithoutExt\" & $dir\"$fileNameWithoutExt\"",
+        "cpp": "cd $dir & g++ -Wall -Wextra -O2 -std=c++17 \"$fileName\" -o \"$fileNameWithoutExt\" & $dir\"$fileNameWithoutExt\" & g++ -S -O2 -std=c++17 \"$fileName\"",
+        "c": "cd $dir & gcc -Wall -Wextra -O2 -std=c11 \"$fileName\" -o \"$fileNameWithoutExt\" & $dir\"$fileNameWithoutExt\"",
+        //"r": "Rscript",
+        //"FortranFreeForm": "cd $dir & gfortran \"$fileName\" -o \"$fileNameWithoutExt\" & $dir\"$fileNameWithoutExt\"",
+        //"fortran-modern": "cd $dir & gfortran \"$fileName\" -o \"$fileNameWithoutExt\" & $dir\"$fileNameWithoutExt\"",
+        //"fortran_fixed-form": "cd $dir & gfortran \"$fileName\" -o \"$fileNameWithoutExt\" & $dir\"$fileNameWithoutExt\"",
+        //"fortran": "cd $dir & gfortran \"$fileName\" -o \"$fileNameWithoutExt\" & $dir\"$fileNameWithoutExt\"",
+        "python": "cd $dir & python \"$fileName\"",
+        //"bat": "cmd /c",
+        "makefile": "cd \"$workspaceRoot\"; make -f Makefile && ./myapp;"
+    },
+    "code-runner.preserveFocus": false,
+    "code-runner.clearPreviousOutput": false,
+    "code-runner.runInTerminal": true,
+    "code-runner.saveFileBeforeRun": true,
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    //"terminal.integrated.env.windows": {
+    //    "PATH" : "/mingw64/bin:/usr/local/bin:/usr/bin:/bin:/c/Windows/System32:/c/Windows:/c/Windows/System32/Wbem:/c/Windows/System32/WindowsPowerShell/v1.0/"
+    //},
+    "code-runner.saveAllFilesBeforeRun": true,
+    "code-runner.ignoreSelection": true,
+
+    // "powermode.enabled": false,
+    // "powermode.shake.enabled": false,
+
+    // R
+    "editor.acceptSuggestionOnEnter": "off",
+    "editor.tabCompletion": "off",
+    "r.rterm.windows": "C:\\Users\\Junner\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\radian.exe",
+    "r.plot.defaults.colorTheme": "vscode",
+    "r.plot.useHttpgd": true,
+    
+    "r.bracketedPaste": true,
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "r.rterm.option": [],
+
+    // Fortran
+    "fortran.fortls.path": "C:\\Users\\Junner\\AppData\\Local\\Programs\\Python\\Python310\\Scripts\\fortls.exe",
+    //"fortran.fortls.path": "C:\\msys64\\mingw64\\bin\\fortls.exe",
+    //"fortran.linter.compilerPath": "C:\\MinGW\\bin\\gfortran.exe",
+    "files.exclude": {
+        "out": false // set this to true to hide the "out" folder with the compiled JS files
+    },
+    "search.exclude": {
+        "out": true // set this to false to include "out" folder in search results
+    },
+    "editor.defaultFormatter": "fortran-lang.linter-gfortran",
+    "editor.formatOnSave": true,
+    "fortran.provide.hover": "fortls",
+    "fortran.provide.symbols": "fortls",
+    "fortran.provide.autocomplete": "fortls",
+    // // Linter options
+    "fortran.linter.compiler": "gfortran",
+    //"fortran.linter.includePaths": ["/usr/include/", "/usr/include/*"],
+    "fortran.linter.includePaths": ["C:\\MinGW\\bin\\gfortran.exe", "C:\\MinGW\\bin\\gfortran.exe*"],
+    // Add arguments used in compilation
+    "fortran.linter.extraArgs": [
+        "-fdefault-real-8",
+        "-fdefault-double-8",
+        "-Wunused-variable",
+        "-Wunused-dummy-argument"
+    ],
+    // Formatting options
+    "fortran.formatting.formatter": "findent",
+    "fortran.formatting.findentArgs": ["-Cn", "--align-paren=1"],
+    // Fortran-Language-Server specific options
+    "fortran.fortls.incrementalSync": true,
+    // Other Fortran options
+    "fortran.preferredCase": "lowercase",
+
+    "files.associations": {
+        "iosfwd": "cpp",
+        "ostream": "cpp",
+        "iostream": "cpp",
+        "*.tcc": "cpp",
+        "unordered_map": "cpp",
+        "unordered_set": "cpp",
+        "string_view": "cpp",
+        "cmath": "cpp",
+        "iomanip": "cpp",
+        "numeric": "cpp",
+        "chrono": "cpp",
+        "limits": "cpp",
+        "valarray": "cpp",
+        "utility": "cpp",
+        "random": "cpp",
+        "thread": "cpp",
+        "xiosbase": "cpp",
+        "tuple": "cpp",
+        "ios": "cpp",
+        "vector": "cpp",
+        "array": "cpp",
+        "deque": "cpp",
+        "forward_list": "cpp",
+        "list": "cpp",
+        "string": "cpp",
+        "initializer_list": "cpp",
+        "regex": "cpp",
+        "format": "cpp",
+        "map": "cpp",
+        "set": "cpp",
+        "xhash": "cpp",
+        "xstring": "cpp",
+        "xtree": "cpp",
+        "xutility": "cpp",
+        "atomic": "cpp",
+        "bitset": "cpp",
+        "cctype": "cpp",
+        "cfenv": "cpp",
+        "cinttypes": "cpp",
+        "clocale": "cpp",
+        "codecvt": "cpp",
+        "complex": "cpp",
+        "condition_variable": "cpp",
+        "csetjmp": "cpp",
+        "csignal": "cpp",
+        "cstdarg": "cpp",
+        "cstddef": "cpp",
+        "cstdint": "cpp",
+        "cstdio": "cpp",
+        "cstdlib": "cpp",
+        "cstring": "cpp",
+        "ctime": "cpp",
+        "cuchar": "cpp",
+        "cwchar": "cpp",
+        "cwctype": "cpp",
+        "exception": "cpp",
+        "algorithm": "cpp",
+        "functional": "cpp",
+        "iterator": "cpp",
+        "memory": "cpp",
+        "memory_resource": "cpp",
+        "optional": "cpp",
+        "ratio": "cpp",
+        "system_error": "cpp",
+        "type_traits": "cpp",
+        "fstream": "cpp",
+        "future": "cpp",
+        "istream": "cpp",
+        "mutex": "cpp",
+        "new": "cpp",
+        "scoped_allocator": "cpp",
+        "shared_mutex": "cpp",
+        "sstream": "cpp",
+        "stdexcept": "cpp",
+        "streambuf": "cpp",
+        "typeindex": "cpp",
+        "typeinfo": "cpp",
+        "bit": "cpp",
+        "charconv": "cpp",
+        "compare": "cpp",
+        "concepts": "cpp",
+        "locale": "cpp",
+        "queue": "cpp",
+        "stack": "cpp",
+        "stop_token": "cpp",
+        "xfacet": "cpp",
+        "xlocale": "cpp",
+        "xlocbuf": "cpp",
+        "xlocinfo": "cpp",
+        "xlocmes": "cpp",
+        "xlocmon": "cpp",
+        "xlocnum": "cpp",
+        "xloctime": "cpp",
+        "xmemory": "cpp",
+        "xstddef": "cpp",
+        "xtr1common": "cpp",
+        "*.rmd": "markdown",
+        "slist": "cpp",
+        "numbers": "cpp",
+        "cassert": "cpp",
+        "strstream": "cpp"
+    },
+
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": false
+    },
+
+    "C_Cpp.codeAnalysis.clangTidy.useBuildPath": false,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.autopep8"
+    },
+    "accessibility.signals.lineHasError": {
+        "sound": "off"
+    } //,
+    //"python.formatting.provider": "none"
+    
+}
+// Users\\Junner\\AppData\\Roaming\\Code\\User\\settings.json
+
+/*****
+{
+    // Controls if quick suggestions should show up while typing
+    "editor.quickSuggestions": {
+        "other": true,
+        "comments": false,
+        "strings": false
+    },
+
+     // Controls whether suggestions should be accepted on commit characters. For example, in JavaScript, the semi-colon (`;`) can be a commit character that accepts a suggestion and types that character.
+    "editor.acceptSuggestionOnCommitCharacter": true,
+
+    // Controls if suggestions should be accepted on 'Enter' - in addition to 'Tab'. Helps to avoid ambiguity between inserting new lines or accepting suggestions. The value 'smart' means only accept a suggestion with Enter when it makes a textual change
+    "editor.acceptSuggestionOnEnter": "on",
+
+    // Controls the delay in ms after which quick suggestions will show up.
+    "editor.quickSuggestionsDelay": 10,
+
+    // Controls if suggestions should automatically show up when typing trigger characters
+    "editor.suggestOnTriggerCharacters": true,
+
+    // Controls if pressing tab inserts the best suggestion and if tab cycles through other suggestions
+    "editor.tabCompletion": "off",
+
+    // Controls whether sorting favours words that appear close to the cursor
+    "editor.suggest.localityBonus": true,
+
+    // Controls how suggestions are pre-selected when showing the suggest list
+    "editor.suggestSelection": "first",
+
+    // Enable word based suggestions
+    "editor.wordBasedSuggestions": true,
+
+    // Enable parameter hints
+    "editor.parameterHints.enabled": true,
+}
+*****/
